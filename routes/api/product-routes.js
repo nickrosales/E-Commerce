@@ -23,7 +23,7 @@ router.get('/:id', (req, res) => {
   })
   .then((productData) => {
     if(!productData) {
-      res.status(404).json({message: 'No category found with this id!'});
+      res.status(404).json({message: 'No product found with this id!'});
       return;
     }
     res.json(productData);
